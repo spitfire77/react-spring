@@ -16,7 +16,7 @@ export interface SpringContext {
 export const SpringContext = ({
   children,
   ...props
-}: PropsWithChildren<SpringContext>) => {
+}: PropsWithChildren<SpringContext> = {}) => {
   const inherited = useContext(ctx)
 
   // Inherited values are dominant when truthy.
